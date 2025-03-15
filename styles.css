@@ -29,6 +29,7 @@ body {
     padding-bottom: 20px;
     border-top: 3px solid black;
     padding-top: 20px;
+    justify-content: center;
 }
 
 .colorado, .texas{
@@ -46,4 +47,17 @@ h2 {
 
 .colorado:hover, .texas:hover {
     transform: scale(1.2);
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+    .header {
+        font-size: 18px;
+        height: 45px;
+    }
+    .colorado, .texas {
+        height: 200px;
+    }
 }
